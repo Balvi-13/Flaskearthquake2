@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Flask Application</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="site.css" />
+    <style>
+        .navbar-fixed-top {
+            min-height: 80px;
+        }
+    </style>
+</head>
+
+<body style="background-color:lightyellow">
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="/" class="navbar-brand">Flask Application</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="details.html">EarthQuake Details</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="container body-content">
+
+
+    </div>
+
+    <br />
+
+
+    <h2 style="text-align:center;color:teal"><b><u>Earth Quake Details</u></b></h2>
+   
+    <form method="post" action="">
+        <table border="1" cellpadding="5" cellspacing="5">
+            <tr>
+                <td>
+
+                    <select name="mag_type">
+                        <option value="">--Select Magnitude Type--</option>
+
+                        <option value="Mw"> Mw</option>
+                        <option value="Mwc"> Mwc</option>
+                        <option value="Mwb"> Mwb</option>
+                        <option value="Mwr"> Mwr</option>
+                        <option value="ms"> ms</option>
+                        <option value="mb"> mb</option>
+                        <option value="mb_lg"> mb_lg</option>
+                        <option value="mh"> mh</option>
+                        <option value="ml"> ml</option>
+                        <option value="ms"> ms</option>
+                        <option value="ms"> ms</option>
+                        <option value="ms"> ms</option>
+
+
+                    </select>
+                </td>
+                <td><input type="submit" /></td>
+            </tr>
+        </table>
+    </form>
+   
+    <h4 style="color:darkblue;text-align:center">Total Number of Records Retrieved are: 0</h4>
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
+    <table>
+        <tr>
+            <th>id</th>
+            <th>MagnitudeType</th>
+            <th>MagnitudeRange</th>
+            <th>DistanceRange</th>
+            <th>Description</th>
+            <th>time</th>
+            <th>latitude</th>
+            <th>longitude</th>
+            <th>depth</th>
+            <th>mag</th>
+            <th>magType</th>
+            <th>nst</th>
+            <th>gap</th>
+            <th>dmin</th>
+            <th>rms</th>
+            <th>net</th>
+            <th>mag id</th>
+            <th>updated</th>
+            <th>place</th>
+            <th>type</th>
+            <th>horizontalErrord</th>
+            <th>depthError</th>
+            <th>magError</th>
+            <th>magNst</th>
+            <th>status</th>
+            <th>locationSource</th>
+            <th>magSource</th>
+        </tr>
+       
+    </table>
+    
+    <p> </p>
+    
