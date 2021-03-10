@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+
+
+
+        <h3 style="color:teal;text-align:left"><b> HOME PAGE </b></h3>
+        <h2 style="color:darkblue; text-align:center"><b>This Page Gives a Short Description About The Web Application. Click
+    the Earthquake Details Tab in the Navigation Bar above to Get the Data </b></h2>
+        <h3>
+          <ul style=" list-style-type:square; text-align:justify"> 
+              <li>
+                  This is a data driven web abblication which is developed using Python with Flask.Since the application is data driven
+                  application, we are displaying the data about EarthQuakes which are happened in the Month of February 2021. It shows
+                  the data like time when the Earthquake happened, longitute, latitute of the Earthquake and Magtype that calculates
+                  the magnitute of the event, locationsource the network that originally authored the reported location of this event etc.
+                  </li><br>
+                       <li>
+                           We Created the application using two tables "mag_type" Table and "month_data" table which are linked on the basis of table field called 'MagType' field.
+                           When user clicks the Earthquake Detail tab on the navigation bar, it displays the page having dropdown list. In this page
+                           you can find all the relevant data about earthquakes on the basis of MagType. The dropdown loads all the MagTypes and when user selects
+                           the MagType and press the <span style="color:darkblue">Submit Button </span>, it displays the details on the basis of selected MagType.
+
+
+                       </li> 
+                
+              <li><b> Some MagTypes does not contain data because it calculates the earthquakes at higher range which luckily
+              never happend like mww,mwc,ms,mfa, mi, mh. so in that case there prompts a message "No Data Available under This mgtype"</b>
+                  <b style="color:darkblue">
+                      You can get more than 5000 rows under 'ml' MagType and get morethan 2000 records under 'md' MagType.
+                      We also created the test cases in the test.py file to do the unit test of our application.</b>
+                       We perform test cases on MgType field with the help of test funtions and then we check input for getMgDetails() Function.
+              
+                  We also created the test cases in the test.py file to do the unit test of our application. We perform test cases
+                  on MgType field with the help of test funtions and then we check input for getMgDetails() Function.
+              </li>
+          </ul>  
+            
+        </h3
+    
+    
+    {% endblock %}
